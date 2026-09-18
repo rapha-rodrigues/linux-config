@@ -1,0 +1,5 @@
+# lazygit — config pessoal (backup em ~/projects/linux-config/lazygit/config.yml)
+os:
+  # Editor usado pela tecla `e`. O `C` (commit via editor) e o git em si usam
+  # `git config --global core.editor`, que também está como nano.
+  editPreset: nano

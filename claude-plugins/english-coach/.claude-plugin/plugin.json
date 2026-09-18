@@ -1,0 +1,9 @@
+{
+  "name": "english-coach",
+  "version": "0.3.0",
+  "description": "Passive American English coaching for a Brazilian Portuguese speaker. Logs nativized corrections of every prompt (typed or dictated) to a single global learning file, without ever blocking or altering the task.",
+  "author": {
+    "name": "Rapha Rodrigues"
+  },
+  "keywords": ["english", "language-learning", "coaching", "hooks"]
+}

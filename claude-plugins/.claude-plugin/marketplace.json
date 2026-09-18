@@ -1,0 +1,13 @@
+{
+  "name": "personal",
+  "owner": {
+    "name": "Rapha Rodrigues"
+  },
+  "plugins": [
+    {
+      "name": "english-coach",
+      "source": "./english-coach",
+      "description": "Passive American English coaching: logs nativized corrections of every prompt to a global learning file."
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "model": "opus[1m]",
+  "effortLevel": "xhigh",
+  "tui": "fullscreen",
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y ccstatusline@latest",
+    "padding": 0
+  },
+  "voice": {
+    "enabled": true,
+    "mode": "hold"
+  },
+  "voiceEnabled": true,
+  "preferredNotifChannel": "notifications_disabled",
+  "remoteControlAtStartup": true,
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true,
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(./run.sh *)",
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(npm ci)",
+      "Bash(npm install)",
+      "Bash(pnpm run *)",
+      "Bash(pnpm install)",
+      "Bash(pnpm test *)",
+      "Bash(yarn run *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(trash *)",
+      "Bash(docker ps *)",
+      "Bash(docker logs *)",
+      "Bash(docker compose up *)",
+      "Bash(docker compose logs *)",
+      "Bash(docker compose ps *)",
+      "Bash(gh pr *)",
+      "Bash(gh issue *)",
+      "Bash(* --version)",
+      "Bash(* --help *)"
+    ],
+    "deny": [
+      "Bash(rm *)",
+      "Bash(rmdir *)",
+      "Bash(sudo *)",
+      "Bash(env *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(claude *)",
+      "Bash(npx *)",
+      "Bash(chmod 777 *)",
+      "Bash(docker compose down *)",
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git push * --force)",
+      "Bash(git push * -f)",
+      "Read(//**/.env)",
+      "Read(//**/.env.*)",
+      "Read(secrets/**)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.kube/**)",
+      "Read(~/.claude.json)",
+      "Read(~/.npmrc)",
+      "Edit(//**/.env)",
+      "Edit(//**/.env.*)",
+      "Edit(~/.ssh/**)"
+    ],
+    "defaultMode": "auto",
+    "additionalDirectories": [
+      "~/.claude/english-learning"
+    ]
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/notify.sh 'Needs your input' normal"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/notify.sh 'Finished' low"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "english-coach@personal": true
+  },
+  "extraKnownMarketplaces": {
+    "personal": {
+      "source": {
+        "source": "directory",
+        "path": "REPLACE_WITH_ABSOLUTE_PATH/linux-config/claude-plugins"
+      }
+    }
+  }
+}

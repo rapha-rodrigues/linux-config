@@ -1,0 +1,18 @@
+## ~/.nanorc — GNU nano (espelho: linux-config/nano/nanorc)
+
+set linenumbers      # números de linha
+set mouse            # clique posiciona o cursor, arraste seleciona, roda rola
+set softwrap         # linhas longas quebram na tela (não no arquivo)...
+set atblanks         # ...em espaços, não no meio da palavra
+set constantshow     # linha/coluna sempre visíveis no rodapé
+set indicator        # barra de rolagem à direita
+set autoindent       # nova linha herda a indentação
+set tabsize 4
+set zap              # Backspace/Delete apagam a seleção inteira
+set afterends        # Ctrl+→ vai para o fim da palavra, como em editores gráficos
+set historylog       # lembra buscas e substituições entre sessões (~/.local/share/nano/)
+
+## Realce de sintaxe: os arquivos que vêm com o pacote nano do Ubuntu.
+## O segundo include é do pacote nano-syntax-highlighting (opcional, mais linguagens).
+include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano-syntax-highlighting/*.nanorc"

@@ -1,0 +1,95 @@
+{
+  "version": 4,
+  "lines": [
+    [
+      {
+        "id": "1",
+        "type": "model",
+        "color": "black",
+        "backgroundColor": "bgBrightCyan",
+        "bold": true,
+        "rawValue": true
+      },
+      {
+        "id": "2b1d9fde-0140-4d82-986e-717418263d96",
+        "type": "context-bar",
+        "color": "ansi256:235",
+        "backgroundColor": "bgBlue",
+        "bold": false,
+        "rawValue": true,
+        "metadata": {
+          "display": "progress-short"
+        }
+      }
+    ],
+    [
+      {
+        "id": "9c1f34fb-a5b1-4483-8a77-decd16098b39",
+        "type": "git-branch",
+        "color": "ansi256:235",
+        "backgroundColor": "bgBrightCyan",
+        "bold": true,
+        "rawValue": false,
+        "metadata": {
+          "linkToGitHub": "false"
+        }
+      },
+      {
+        "id": "e52ecc4c-68b3-421c-b543-d8a510f590a4",
+        "type": "git-changes",
+        "color": "ansi256:235",
+        "backgroundColor": "bgBlue"
+      }
+    ],
+    [
+      {
+        "id": "fef97769-09cd-423a-bd28-bedfd8bc1767",
+        "type": "reset-timer",
+        "color": "black",
+        "backgroundColor": "bgBrightCyan",
+        "bold": true,
+        "rawValue": false,
+        "metadata": {
+          "display": "time",
+          "compact": "true"
+        }
+      },
+      {
+        "id": "c5bdb256-5a54-445a-af33-ec3f7dd150a7",
+        "type": "block-timer",
+        "color": "ansi256:235",
+        "backgroundColor": "bgBlue",
+        "rawValue": false,
+        "metadata": {
+          "display": "progress-short",
+          "invert": "false"
+        }
+      }
+    ]
+  ],
+  "flexMode": "full-minus-40",
+  "compactThreshold": 60,
+  "colorLevel": 2,
+  "defaultPadding": " ",
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "minimalistMode": false,
+  "powerline": {
+    "enabled": true,
+    "separators": [
+      ""
+    ],
+    "separatorInvertBackground": [
+      false
+    ],
+    "startCaps": [
+      ""
+    ],
+    "endCaps": [
+      ""
+    ],
+    "theme": "custom",
+    "autoAlign": false,
+    "continueThemeAcrossLines": true
+  }
+}
